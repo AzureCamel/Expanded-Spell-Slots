@@ -1,0 +1,155 @@
+/* Expanded Spell Slots Module Styles */
+
+/* Configuration Form Styles */
+.expanded-spell-slots-config {
+  padding: 10px;
+}
+
+.expanded-spell-slots-config .notes {
+  margin-bottom: 15px;
+  font-style: italic;
+  color: var(--color-text-dark-secondary, #666);
+}
+
+.expanded-spell-slots-config h3 {
+  margin: 15px 0 10px 0;
+  border-bottom: 1px solid var(--color-border-light-primary, #ccc);
+  padding-bottom: 5px;
+}
+
+.expanded-slots-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+}
+
+.expanded-slots-table th,
+.expanded-slots-table td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid var(--color-border-light-primary, #ccc);
+}
+
+.expanded-slots-table th {
+  background: var(--color-cool-5, #f0f0f0);
+  font-weight: bold;
+}
+
+.expanded-slots-table td.spell-level {
+  text-align: left;
+  font-weight: 500;
+}
+
+.expanded-slots-table input[type="number"] {
+  width: 60px;
+  text-align: center;
+}
+
+.expanded-slots-table input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+.expanded-slots-table td.remove {
+  width: 40px;
+  border: none;
+  background: transparent;
+}
+
+.expanded-slots-table button.remove-level {
+  background: #dc3545;
+  border: 1px solid #c82333;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 5px 10px;
+  color: #ffffff;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.expanded-slots-table button.remove-level:hover {
+  background: #c82333;
+  border-color: #bd2130;
+  transform: scale(1.05);
+}
+
+.add-level-group {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.add-level-btn {
+  background: #28a745;
+  border: 1px solid #218838;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.add-level-btn:hover {
+  background: #218838;
+  border-color: #1e7e34;
+  transform: scale(1.02);
+}
+
+.add-level-btn i {
+  margin-right: 6px;
+}
+
+/* Save Button Footer */
+.expanded-spell-slots-config .sheet-footer {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid var(--color-border-light-primary, #ccc);
+}
+
+.expanded-spell-slots-config .save-btn {
+  flex: 1;
+  background: #007bff;
+  border: 1px solid #0069d9;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.expanded-spell-slots-config .save-btn:hover {
+  background: #0069d9;
+  border-color: #0062cc;
+  transform: scale(1.02);
+}
+
+.expanded-spell-slots-config .save-btn i {
+  margin-right: 8px;
+}
+
+/* Spell Slot Display Enhancements for expanded levels */
+.dnd5e2.sheet.actor .spellcasting .spell-slots .slot-header[data-level="10"],
+.dnd5e2.sheet.actor .spellcasting .spell-slots .slot-header[data-level="11"],
+.dnd5e2.sheet.actor .spellcasting .spell-slots .slot-header[data-level="12"],
+.dnd5e2.sheet.actor .spellcasting .spell-slots .slot-header[data-level="13"],
+.dnd5e2.sheet.actor .spellcasting .spell-slots .slot-header[data-level="14"],
+.dnd5e2.sheet.actor .spellcasting .spell-slots .slot-header[data-level="15"] {
+  background: linear-gradient(to right, #4a1850, #6b2570);
+  color: #fff;
+}
+
+/* Alternative v1 sheet styling */
+.dnd5e.sheet.actor .spellbook .spell-level-slots[data-level="10"],
+.dnd5e.sheet.actor .spellbook .spell-level-slots[data-level="11"],
+.dnd5e.sheet.actor .spellbook .spell-level-slots[data-level="12"],
+.dnd5e.sheet.actor .spellbook .spell-level-slots[data-level="13"],
+.dnd5e.sheet.actor .spellbook .spell-level-slots[data-level="14"],
+.dnd5e.sheet.actor .spellbook .spell-level-slots[data-level="15"] {
+  border-color: #6b2570;
+}

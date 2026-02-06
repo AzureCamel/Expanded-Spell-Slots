@@ -1,0 +1,27 @@
+{
+  "EXPANDED_SPELL_SLOTS": {
+    "Settings": {
+      "ConfigMenu": {
+        "Name": "Expanded Spell Slots Configuration",
+        "Label": "Configure",
+        "Hint": "Configure which expanded spell levels are available and their requirements.",
+        "Title": "Expanded Spell Slots Settings",
+        "Description": "Configure spell slots beyond 9th level. Set which character levels unlock access to each expanded spell level and how many slots are available."
+      },
+      "SpellLevelConfig": "Spell Level Configuration",
+      "SpellLevel": "Spell Level",
+      "Enabled": "Enabled",
+      "CharacterLevel": "Char Level Required",
+      "Slots": "Slots",
+      "CharacterLevelHint": "The character level required determines when a character gains access to these spell slots. Slots determines how many spell slots of that level they receive. Changes require a reload to take effect.",
+      "AddLevel": "Add Spell Level",
+      "RemoveLevel": "Remove this spell level",
+      "SaveAndReload": "Save & Reload"
+    },
+    "ReloadRequired": {
+      "Title": "Reload Required",
+      "Content": "The expanded spell slot configuration has changed. The game must be reloaded for changes to take effect. Reload now?"
+    },
+    "Reloading": "Expanded Spell Slots settings saved. Reloading..."
+  }
+}

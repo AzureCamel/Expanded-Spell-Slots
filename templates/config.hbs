@@ -1,0 +1,58 @@
+<form class="expanded-spell-slots-config">
+  <p class="notes">{{localize "EXPANDED_SPELL_SLOTS.Settings.ConfigMenu.Description"}}</p>
+  
+  <input type="hidden" name="maxSpellLevel" value="{{maxSpellLevel}}">
+  
+  <h3>{{localize "EXPANDED_SPELL_SLOTS.Settings.SpellLevelConfig"}}</h3>
+  
+  <table class="expanded-slots-table">
+    <thead>
+      <tr>
+        <th>{{localize "EXPANDED_SPELL_SLOTS.Settings.SpellLevel"}}</th>
+        <th>{{localize "EXPANDED_SPELL_SLOTS.Settings.Enabled"}}</th>
+        <th>{{localize "EXPANDED_SPELL_SLOTS.Settings.CharacterLevel"}}</th>
+        <th>{{localize "EXPANDED_SPELL_SLOTS.Settings.Slots"}}</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each levels}}
+      <tr>
+        <td class="spell-level">
+          <strong>{{label}}</strong>
+        </td>
+        <td class="enabled">
+          <input type="checkbox" name="levels.{{level}}.enabled" {{checked enabled}}>
+        </td>
+        <td class="char-level">
+          <input type="number" name="levels.{{level}}.characterLevel" value="{{characterLevel}}" min="1" max="30" step="1">
+        </td>
+        <td class="slots">
+          <input type="number" name="levels.{{level}}.slots" value="{{slots}}" min="1" max="10" step="1">
+        </td>
+        <td class="remove">
+          {{#if (gt level 10)}}
+          <button type="button" class="remove-level" data-level="{{level}}" title="{{localize 'EXPANDED_SPELL_SLOTS.Settings.RemoveLevel'}}">
+            <i class="fas fa-trash"></i>
+          </button>
+          {{/if}}
+        </td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+  
+  <div class="form-group add-level-group">
+    <button type="button" name="addLevel" class="add-level-btn">
+      <i class="fas fa-plus"></i> {{localize "EXPANDED_SPELL_SLOTS.Settings.AddLevel"}}
+    </button>
+  </div>
+  
+  <p class="notes hint">{{localize "EXPANDED_SPELL_SLOTS.Settings.CharacterLevelHint"}}</p>
+  
+  <footer class="sheet-footer flexrow">
+    <button type="submit" class="save-btn">
+      <i class="fas fa-save"></i> {{localize "EXPANDED_SPELL_SLOTS.Settings.SaveAndReload"}}
+    </button>
+  </footer>
+</form>

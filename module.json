@@ -1,0 +1,39 @@
+{
+  "id": "expanded-spell-slots",
+  "title": "Expanded Spell Slots",
+  "description": "Adds configurable spell slots beyond 9th level for D&D 5e. Configure which character levels unlock access to 10th+ level spell slots and how many slots are available.",
+  "version": "1.0.2",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "authors": [
+    {
+      "name": "AzureCamel"
+    }
+  ],
+  "esmodules": ["scripts/main.mjs"],
+  "styles": ["styles/expanded-spell-slots.css"],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "languages/en.json"
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "5.0.0",
+          "verified": "5.2.4"
+        }
+      }
+    ]
+  },
+  "url": "https://github.com/AzureCamel/Expanded-Spell-Slots",
+  "manifest": "https://github.com/AzureCamel/Expanded-Spell-Slots/releases/latest/download/module.json",
+  "download": "https://github.com/AzureCamel/Expanded-Spell-Slots/releases/download/v1.0.2/module.zip"
+}
