@@ -21,7 +21,7 @@ A Foundry VTT module for D&D 5e that adds configurable spell slots beyond 9th le
 
 ### Manifest URL
 ```
-https://your-url/module.json
+https://your-url/module.json](https://github.com/AzureCamel/Expanded-Spell-Slots/releases/latest/download/module.json
 ```
 
 ## Configuration
